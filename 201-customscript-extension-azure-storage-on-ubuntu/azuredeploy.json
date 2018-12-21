@@ -71,23 +71,7 @@
       }
     }
   },
-  "variables": {
-    "scenarioPrefix": "customscriptLinux",
-    "imagePublisher": "Canonical",
-    "imageOffer": "UbuntuServer",
-    "ubuntuOSVersion": "16.04-LTS",
-    "nicName": "[concat(variables('scenarioPrefix'),'Nic')]",
-    "vnetAddressPrefix": "10.0.0.0/16",
-    "subnetName": "[concat(variables('scenarioPrefix'),'Subnet')]",
-    "subnetPrefix": "10.0.0.0/24",
-    "storageAccountType": "Standard_LRS",
-    "publicIPAddressName": "[concat(variables('scenarioPrefix'),'PublicIp')]",
-    "publicIPAddressType": "Dynamic",
-    "vmStorageAccountContainerName": "vhds",
-    "vmName": "[concat(variables('scenarioPrefix'),'VM')]",
-    "virtualNetworkName": "[concat(variables('scenarioPrefix'),'Vnet')]",
-    "subnetRef": "[resourceId('Microsoft.Network/virtualNetworks/subnets', variables('virtualNetworkName'), variables('subnetName'))]"
-  },
+
   "resources": [
     {
       "type": "Microsoft.Network/publicIPAddresses",
